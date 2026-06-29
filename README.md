@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧭 LogPose — AI & ML Engineer Portfolio
 
-## Getting Started
+> *"Every great navigator needs a Log Pose. Mine points toward Artificial Intelligence."*
 
-First, run the development server:
+A One Piece inspired portfolio for an MSc Artificial Intelligence & Machine Learning student.
+
+## 🌊 Built With
+
+- **Next.js 16** — React framework
+- **Tailwind CSS v4** — Styling
+- **Framer Motion** — Animations
+- **TypeScript** — Type safety
+
+## 🗺️ Portfolio Sections
+
+1. ⚓ Hero — The Grand Line of AI
+2. 📖 Captain's Log — About Me
+3. 🍎 Devil Fruits — Skills
+4. 🏝️ Project Islands — My Projects
+5. 🗺️ Journey Map — Timeline
+6. 🏴‍☠️ Wanted Posters — Achievements
+7. 💎 Treasure Vault — GitHub Stats
+8. 🔦 Lighthouse — Contact
+
+## 🚀 Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👩‍💻 Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Rachel** — MSc AI & ML Student
+- GitHub: [@rachel-d-07](https://github.com/rachel-d-07)

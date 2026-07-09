@@ -6,6 +6,9 @@ export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [isMounted,  setIsMounted]  = useState(false);
+
+  useEffect(() => { setIsMounted(true); }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,6 +57,9 @@ export default function AboutSection() {
       }}
     >
       {/* ── Animated background orbs ── */}
+      {/* ── Animated background orbs ── */}
+    {typeof window !== "undefined" && (
+      <>
       <div style={{
         position: "absolute",
         top:      "20%",
@@ -61,11 +67,10 @@ export default function AboutSection() {
         width:    "400px",
         height:   "400px",
         background: "radial-gradient(circle, rgba(245,200,66,0.04) 0%, transparent 70%)",
-        transform: `translate(${(mousePos.x - (typeof window !== "undefined" ? window.innerWidth : 0)  / 2) * 0.01}px,
-                  ${(mousePos.y - (typeof window !== "undefined" ? window.innerHeight : 0) / 2) * 0.01}px)`,
+        transform: `translate(${mousePos.x * 0.01}px, ${mousePos.y * 0.01}px)`,
         transition: "transform 0.5s ease",
         pointerEvents: "none",
-      }} />
+        }} />
       <div style={{
         position: "absolute",
         bottom:   "20%",
@@ -73,12 +78,12 @@ export default function AboutSection() {
         width:    "300px",
         height:   "300px",
         background: "radial-gradient(circle, rgba(58,158,143,0.06) 0%, transparent 70%)",
-        transform: `translate(${(mousePos.x - (typeof window !== "undefined" ? window.innerWidth : 0)  / 2) * -0.015}px,
-                  ${(mousePos.y - (typeof window !== "undefined" ? window.innerHeight : 0) / 2) * -0.015}px)`,
+        transform: `translate(${mousePos.x * -0.015}px, ${mousePos.y * -0.015}px)`,
         transition: "transform 0.5s ease",
         pointerEvents: "none",
-      }} />
-
+        }} />
+  </>
+)}
       {/* ── Decorative compass rose ── */}
       <div style={{
         position:  "absolute",
